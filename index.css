@@ -19,7 +19,8 @@ html {
 /*	overflow-x: hidden;*/
 /*	-webkit-overflow-scrolling: touch; /* Safari scroll bug */
 }
-body {
+
+body{
 	font-family: 'Myriad Pro', sans-serif;
 	color: #555555;
 	overflow-x: hidden;
@@ -105,7 +106,7 @@ body {
 #navbar .logo {
 	height: 4vw;
 	width: 4vw; /* for IE */
-	margin: 0 1vw 0 3vw;
+	margin: 0 1vw 0 3vw ;
 }
 #navbar .title {
 	font-size: 1.5em;
@@ -114,8 +115,9 @@ body {
 	padding-top: .1em;
 	margin-right: 3vw;
 }
-#navbar>.button {
-	flex: 1 0 0;
+  
+#navbar>.button{
+	flex:1 0 0;
 	padding: 0 2%;
 	font-size: 2em;
 	text-align: center;
@@ -133,30 +135,36 @@ body {
 #nav-how {
 	top: 8vw;
 }
-#nav-teams {
+
+#nav-teams{
 	top: -5vw;
 }
-#nav-faq {
+
+#nav-faq{
 	top: -5vw;
 }
+
 /* PAGES */
 .page {
 	width: 100%;
 	position: relative;
 }
-#title {
+  
+#title{
 	background-image: url('img/titlebg.png');
 	background-size: cover;
 	background-position: top right;
 	height: 68vw;/*	min-height:68vw;
 	max-height: 100vw;*/
 }
+  
 #intro {
 	background-color: #A3E4D7;
 	height: 25vw;
 }
-#intro:before {
-	content: '';
+
+#intro:before{
+	content:'';
 	position: absolute;
 	top: -20vw;
 	border-bottom: 20vw solid #A3E4D7;
@@ -175,8 +183,8 @@ body {
 	background-color: #BBF3FC;
 	height: 65vw;
 }
-#how:after {
-	content: '';
+#how:after{
+	content:'';
 	position: absolute;
 	bottom: -10vw;
 	border-top: 10vw solid #BBF3FC;
@@ -187,15 +195,15 @@ body {
 	background-color: #F9EDBB;
 	margin-bottom: -5vw;
 }
-#feature:after {
-	content: '';
+#feature:after{
+	content:'';
 	position: absolute;
 	bottom: -5vw;
 	border-top: 10vw solid #F9EDBB;
 	border-left: 100vw solid transparent;
 	z-index: 80;
 }
-#timeline {
+#timeline{
 	background-color: #D6CBF7;
 }
 #faq {
@@ -224,16 +232,11 @@ body {
  padding: .8vw 1.2vw;
 	height: 2.8em;
 }
-#title>#lang #en {
-	font-family: 'Myriad Pro', sans-serif
-}
-#title>#lang #zh-tw {
-	font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif
-}
-#title>#lang #zh-cn {
-	font-family: 'Noto Sans SC', 'Microsoft JhengHei', sans-serif
-}
-#title .area {
+#title>#lang #en{font-family: 'Myriad Pro', sans-serif}
+#title>#lang #zh-tw{font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif}
+#title>#lang #zh-cn{font-family: 'Noto Sans SC', 'Microsoft JhengHei', sans-serif}
+
+#title .area{
 	width: 80%;
 	position: relative;
 }
@@ -413,64 +416,77 @@ body {
 	text-align: left;
 }
 /* TIMELINE */
-#timeline>.title {
+#timeline>.title{
 	font-size: 4em;
 	width: 100%;
 	padding-top: 10vw;
 	text-align: center;
 	font-weight: 900;
 }
-#timeline>.canvas {
+#timeline>.canvas{
 	width: 100%;
 	position: relative;
 }
-#timeline>.canvas>* {
+
+#timeline>.canvas>*{
 	position: absolute;
 }
-#timeline>.canvas>.vline {
+
+#timeline>.canvas>.vline{
 	background-color: #000000;
- width: .3vw; /* Sync with timeline.js!! */
+	width: .3vw; /* Sync with timeline.js!! */
 }
-#timeline>.canvas>.event {
+
+#timeline>.canvas>.event{
 	width: 1.61658vw; /* Sync with timeline.js!! */
 	height: 1.4vw; /* Sync with timeline.js!! */
- margin: .3vw; /* Sync with timeline.js!! */
+	margin: .3vw; /* Sync with timeline.js!! */
 }
-#timeline>.canvas .eventBox {
+
+#timeline>.canvas .eventBox{
 	position: absolute;
- top: -.6vw;
+	top: -.6vw;
 	width: 30vw;
 }
-#timeline>.canvas .eventBox.emph {
+
+#timeline>.canvas .eventBox.emph{
 	color: #000000;
 	font-weight: bold;
 }
-#timeline>.canvas>.event:nth-child(4n)>.eventBox {
+
+#timeline>.canvas>.event:nth-child(4n)>.eventBox{
 	left: 2.5vw;
 	text-align: left;
 }
-#timeline>.canvas>.event:nth-child(4n+2)>.eventBox {
+
+#timeline>.canvas>.event:nth-child(4n+2)>.eventBox{
 	right: 2.5vw;
 	text-align: right;
 }
-#timeline>.canvas .eventBox .year {
+
+#timeline>.canvas .eventBox .year{
 	font-size: 2em;
 	padding: 0 .5em;
 }
-#timeline>.canvas .eventBox .month {
+
+#timeline>.canvas .eventBox .month{
 	font-size: 2.5em;
 }
-#timeline>.canvas .eventBox .content {
+
+#timeline>.canvas .eventBox .content{
 	font-size: 1.5em;
 }
-#timeline>.canvas .hex>.left {
-	border-right: solid #000000;
+
+#timeline>.canvas .hex>.left{
+    border-right: solid #000000;
 }
-#timeline>.canvas .hex>.mid {
-	background-color: #000000;
+
+#timeline>.canvas .hex>.mid{
+    background-color: #000000;
 }
-#timeline>.canvas .hex>.right {
-	border-left: solid #000000;
+
+#timeline>.canvas .hex>.right{
+    border-left: solid #000000;
 }
 /* FAQ */
 #faq>.title {
@@ -504,29 +520,34 @@ body {
 	background-position: right 2% top 0;*/
 	background-color: #FFB160;
 }
-#faq>.question {
-	/*	background-image: url(img/logo.svg);
+  
+#faq>.question{
+/*	background-image: url(img/logo.svg);
 	background-repeat: no-repeat;
 	background-position: right 2% top 0;*/
 	background-color: #FFFFFF66;
 	padding-left: 1vw;
 }
-#faq>.answer {
+  
+#faq>.answer{
 	padding-left: 1.5vw;
 	margin: .5em 1.5vw 0 1.5vw;
 	line-height: 1.5em;
 	display: none;
 }
-#faq>.question.show+.answer {
+  
+#faq>.question.show+.answer{
 	display: block;
 	border-left: #FF8C00 solid 3px;
 }
-#faq video {
+
+#faq video{
 	width: 80%;
 	margin: 0 10%;
 }
+
 /* TEAM */
-#teamX .member {
+#teamX .member{
 	display: inline-block;
 	/*flex: 44% 0 0;*/
 	width: 100%;
@@ -534,12 +555,13 @@ body {
 	margin: 3%;
 	padding: 5%;
 	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
 }
-#team .member {
+
+#team .member{
 	display: inline-block;
 	/* flex: 44% 0 0; */
 	width: 48%;
@@ -547,27 +569,31 @@ body {
 	position: relative;
 	margin: 0.9%;
 	padding: 3%;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;/* left: -20%; */
+ 	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+	/* left: -20%; */
 	/* right: -20%; */
 }
+
 #teams .member:hover {
 	box-shadow: 0px 30px 80px 0 rgba(20,52,92,0.2);
-	border-radius: 5px;
-	border-color: #fff !important;
-	background-color: #fff !important;
+	border-radius:5px;
+	border-color:#fff !important;
+	background-color:#fff !important;
 }
-#teams .member-icon {
+
+#teams .member-icon{
 	width: 30%;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 	filter: drop-shadow(1px 1px 1px #bbb);
 }
-#teams .member-name {
+
+#teams .member-name{
 	display: block;
 	margin: 0 auto;
 	margin-top: 0.6em;
@@ -576,50 +602,58 @@ body {
 	letter-spacing: 0.04em;
 	text-align: center;
 }
-#teams .member-intro {
-	font-family: 'Yrsa', Times New Roman, serif;/*	display: grid;
+
+#teams .member-intro{
+	font-family: 'Yrsa', Times New Roman, serif;
+/*	display: grid;
 	grid-template: 1fr 1fr / 1fr 1fr;
 	grid-gap: 10px;*/
 /*	background: #ddd;*/
 }
+
 #teams .effect {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
+	   -ms-flex-direction: column;
+	       flex-direction: column;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	/*	padding: 1em;*/
+	   -ms-flex-align: center;
+	      align-items: center;
+/*	padding: 1em;*/
 	cursor: pointer;
 }
+
 #teams .effect_heading {
 	font-size: 1.5em;
 	line-height: 1.2;
 	position: relative;
 	z-index: 2;
 }
+
 #teams .effect_heading:after {
 	content: '';
 	position: absolute;
 }
+
 #teams .effect_subheading {
 	font-family: 'Hindi', Avenir, sans-serif;
 	font-size: 1.2em;
 	line-height: 2;
 	letter-spacing: 0.04em;
 }
+
 #teams .effect-a {
 	opacity: 0.5;
 	-webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
-	transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 #teams .effect-a .effect__heading:after {
 	opacity: 0;
 	bottom: 2px;
@@ -629,43 +663,56 @@ body {
 	background: #000;
 	z-index: -1;
 	-webkit-transform-origin: 0% 50%;
-	transform-origin: 0% 50%;
+	        transform-origin: 0% 50%;
 	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),  transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-	transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),  transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transform: scaleX(0);
+	-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 #teams .effect-a .effect_subheading {
 	opacity: 0;
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	-webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),  -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),  transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),  -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),  transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transform: translateX(-50%);
+	-webkit-transition:           opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                    -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition:           opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                    -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 #teams .effect-a:hover {
 	opacity: 1;
 }
+
 #teams .effect-a:hover .effect_heading:after {
 	opacity: 0.1;
 	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
+	        transform: scaleX(1);
 }
+
 #teams .effect-a:hover .effect_subheading {
 	opacity: 1;
 	-webkit-transform: translateX(0%);
-	transform: translateX(0%);
+	        transform: translateX(0%);
 }
-#teams>.title {
+
+#teams>.title{
 	font-size: 4em;
 	width: 100%;
 	text-align: center;
 	font-weight: 900;
 }
+
 #teams img {
 	margin-left: 10%;
 	margin-right: 10%;
 	width: 80%;
 }
+
 #teams .img_intro {
 	margin-left: 10%;
 	margin-right: 10%;
