@@ -27,20 +27,14 @@ body{ background:#f7f7f7; font-size:14px;}
 <body>
 <div class="box">
 	<p class="exp"><span class="color">地址验证</span>，请输入您要验证的地址,<span class="color">确保地址安全</span>。</p>
-    <form action="" method="post" onsubmit="checkUrl();">
+    <form action="" method="get" onsubmit="checkUrl();">
          <ul class="ulForm">
             <li><input type="text" placeholder="请输入您要验证的地址" name="url" id="url" value="" onfocus="this.value=''"/></li>
-            <li class="button"><input type="submit" value="验证地址" name="get" /><!--<input type="button" value="submit">--></li>
+            <li class="button"><input type="submit" value="验证地址" name="get" /></li>
         </ul>
     </form>
-    <!--<form action="" method="post" onsubmit="checkUrl();">
-        URL:
-        <input type="text" name="url" id="url" value="" onfocus="this.value=''"/>
-        <br /><br />
-        <input type="submit" value="验证地址" name="get"/>
-    </form>-->
  </div>   
 <script type="text/javascript" src="js/md5.js"></script>
-<script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="js/test_zh-cn.js"></script>
 </body>
 </html>

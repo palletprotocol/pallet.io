@@ -2,13 +2,13 @@
 function checkUrl() {
 	var a = document.getElementById('url').value;
 	if (a == '') {
-		alert('The verification address is not empty!');
+		alert('验证地址不能为空!');
 		return false
 	} else if (!isURL(a)) {
-		alert('Verification address does not exist! Please operate with caution!');
+		alert('验证的地址不存在! 请谨慎操作!');
 		return false
 	} else {
-		alert('Verification success!');
+		alert('验证成功!');
 		return true
 	}
 	return false
